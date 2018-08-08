@@ -1,0 +1,22 @@
+/* 
+custom css to override some bootstrap elements
+*/
+
+body {
+    background:     rgb(237, 237, 237);
+}
+
+.progress {
+    height:         30px;
+}
+
+.profile {
+    background:     white; 
+    padding:        20px; 
+    border-radius:  10px; 
+    margin-top:     50px;
+}
+
+.progress-custom{
+    margin-top:     40px
+}

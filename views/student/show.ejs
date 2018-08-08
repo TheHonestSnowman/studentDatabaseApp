@@ -1,0 +1,47 @@
+<% include ../partials/header %> <!-- include header template -->
+
+
+    <div class="row col-sm-12">
+        <div class="col-sm-6 col-sm-offset-3 profile">
+            
+            <div class="col-sm-6 text-center" >
+                <img src ="<%= student.image %>">
+                <h3><%= student.studentID %></h3>
+            </div>
+            
+        <div class="col-sm-6">
+            
+            <!-- create progress bars showing student results -->
+            
+            <div class="progress-custom">
+                <h4>Unit One</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <%= student.unitOne %>%;">
+                        <%= student.unitOne %>%
+                    </div>
+                </div>
+            </div>
+        
+            <div class="progress-custom">
+                <h4>Unit Two</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <%= student.unitTwo %>%;">
+                        <%= student.unitTwo %>%
+                    </div>
+                </div>   
+            </div>
+        
+            <div class="progress-custom">
+                <h4>Unit Three</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <%= student.unitThree %>%;">
+                        <%= student.unitThree %>%
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+     
+<% include ../partials/footer %> <!-- include footer template -->
